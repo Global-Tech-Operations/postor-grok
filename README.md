@@ -11,7 +11,7 @@ del plan, rol y permisos de la empresa conectada.
 ## Instalación directa
 
 ```sh
-grok plugin install https://github.com/VisionSocial/postor-grok.git --trust
+grok plugin install https://github.com/Global-Tech-Operations/postor-grok.git --trust
 ```
 
 Abre `/mcps`, selecciona Postor e inicia la autorización con `i`. Inicia sesión
