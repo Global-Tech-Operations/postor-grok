@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "postor": {
+      "type": "http",
+      "url": "https://api.postor.com.mx/api/plugin/mcp",
+      "oauth": {
+        "clientId": "https://api.postor.com.mx/api/plugin/grok-client.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "postor",
+  "version": "1.0.0",
+  "description": "Busca licitaciones públicas de México y gestiona proyectos, tareas y carpetas en tu cuenta autorizada de Postor.",
+  "author": {
+    "name": "Global Tech Operations, LLC",
+    "email": "hola@postor.com.mx"
+  },
+  "homepage": "https://postor.com.mx",
+  "repository": "https://github.com/VisionSocial/postor-grok",
+  "license": "LicenseRef-Postor-Plugin"
+}
