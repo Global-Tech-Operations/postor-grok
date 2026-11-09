@@ -16,10 +16,27 @@ grok plugin install https://github.com/VisionSocial/postor-grok.git --trust
 
 Abre `/mcps`, selecciona Postor e inicia la autorización con `i`. Inicia sesión
 únicamente en Postor. Autoriza solo los permisos necesarios y vuelve a Grok.
+La conexión solicita solo lectura de forma predeterminada.
 La conexión usa OAuth con PKCE; no pegues contraseñas, tokens ni claves en el chat.
 
 La incorporación al catálogo oficial de xAI está pendiente de revisión.
 Esta integración es para **Grok Build**, no una publicación en el chat general de grok.com.
+
+## Permisos de escritura opcionales
+
+Para proyectos, tareas o carpetas, solicita explícitamente los permisos necesarios
+mediante la configuración nativa de Grok (`~/.grok/config.toml`), actualiza `/mcps`
+y vuelve a autorizar Postor. La selección final se confirma en Postor.
+
+```toml
+[mcp_servers.postor]
+url = "https://api.postor.com.mx/api/plugin/mcp"
+oauth_client_id = "https://api.postor.com.mx/api/plugin/grok-client.json"
+oauth_scopes = ["postor:read", "postor:write"]
+```
+
+Agrega `postor:delete` solo si necesitas eliminar carpetas. No se solicita acceso
+de colaboración. Una membresía no sustituye la autorización de estos permisos.
 
 ## Ejemplos
 
